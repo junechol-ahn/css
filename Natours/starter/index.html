@@ -16,7 +16,24 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle"/>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Your benefits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
       </div>
@@ -26,11 +43,11 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
       </div>
-    </header> -->
+    </header>
 
-    <!-- <main>
+    <main>
       <section class="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">
@@ -61,7 +78,19 @@
           </div>
           <div class="col-1-2">
             <div class="composition">
-              <img
+              <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 1"
+                   class="composition__photo composition__photo--p1"
+                   src="img/nat-1-large.jpg">
+              <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 2"
+                   class="composition__photo composition__photo--p2"
+                   src="img/nat-2-large.jpg">
+              <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" 
+                   sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px" alt="Photo 3"
+                   class="composition__photo composition__photo--p3"
+                   src="img/nat-3-large.jpg">
+              <!-- <img
                 src="img/nat-1-large.jpg"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
@@ -75,7 +104,7 @@
                 src="img/nat-3-large.jpg"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -132,9 +161,9 @@
           </div>
         </div>
       </section>
-    </main> -->
+    </main>
 
-    <!-- <section class="section-tours">
+    <section class="section-tours" id="section-tours">
       <div class="u-center-text u-margin-bottom-big">
         <h2 class="heading-secondary">Most popular tours</h2>
       </div>
@@ -164,7 +193,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$297</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -195,7 +224,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$497</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -225,7 +254,7 @@
                   <p class="card__price-only">Only</p>
                   <p class="card__price-value">$897</p>
                 </div>
-                <a href="#" class="btn btn--white">Book now</a>
+                <a href="#popup" class="btn btn--white">Book now</a>
               </div>
             </div>
           </div>
@@ -234,7 +263,7 @@
       <div class="u-center-text u-margin-top-huge">
         <a href="#" class="btn btn--green">Discover all tours</a>
       </div>
-    </section> -->
+    </section>
 
     <section class="section-stories">
       <div class="bg-video">
@@ -336,7 +365,12 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="full logo" class="footer__logo">
+        <picture class="footer__logo">
+          <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" 
+              media="(max-width: 37.5em)">
+          <img srcset="img/logo-green-2x.png 2x, img/logo-green-1x.png 1x" 
+              alt="full logo" class="footer__logo">
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-2">
@@ -357,6 +391,24 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Upcomming tours</h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero expedita voluptatibus praesentium quos. Explicabo animi eius quas liberoeligendi dolores consequuntur expedita voluptatibus praesentium quos. Explicabo animi eius quas libero provident architecto similique nemo sunt obcaecati! Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          </p>
+          <a href="#" class="btn btn--green">Book now!</a>
+        </div>
+      </div>
+    </div>
 
     <!-- <section class="grid-test">
       <div class="row">
