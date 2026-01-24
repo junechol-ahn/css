@@ -4,18 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-    <title>trillo &mdash; Your all-in-one booking app</title>
+    <title>trillo &mdash; 모든 예약을 한 번에</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <img src="img/logo.png" alt="trillo" class="logo" />
         <form action="#" class="search">
-          <input type="text" class="search__input" placeholder="Search Hotel" />
+          <input type="text" class="search__input" placeholder="호텔 검색" />
           <button class="search__button">
             <svg class="search__icon">
               <use href="img/sprite.svg#magnifying-glass"></use>
@@ -36,7 +39,11 @@
             <span class="user-nav__notification">13</span>
           </div>
           <div class="user-nav__user">
-            <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo" />
+            <img
+              src="img/user.jpg"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
             <span class="use-nav__user-name">Jon</span>
           </div>
         </nav>
@@ -50,7 +57,7 @@
                 <svg class="side-nav__icon">
                   <use href="img/sprite.svg#home"></use>
                 </svg>
-                <span>Hotel</span>
+                <span>호텔</span>
               </a>
             </li>
             <li class="side-nav__item">
@@ -58,7 +65,7 @@
                 <svg class="side-nav__icon">
                   <use href="img/sprite.svg#aircraft-take-off"></use>
                 </svg>
-                <span>Flight</span>
+                <span>항공권</span>
               </a>
             </li>
             <li class="side-nav__item">
@@ -66,7 +73,7 @@
                 <svg class="side-nav__icon">
                   <use href="img/sprite.svg#key"></use>
                 </svg>
-                <span>Car Rental</span>
+                <span>렌터카</span>
               </a>
             </li>
             <li class="side-nav__item">
@@ -74,27 +81,39 @@
                 <svg class="side-nav__icon">
                   <use href="img/sprite.svg#map"></use>
                 </svg>
-                <span>Tours</span>
+                <span>투어</span>
               </a>
             </li>
           </ul>
-          <div class="legal">&copy; 2025 by trillo. All rights reserved.</div>
+          <div class="legal">&copy; 2025 by trillo. 모든 권리 보유.</div>
         </nav>
         <main class="hotel-view">
           <div class="gallery">
             <figure class="gallery__item">
-              <img src="img/hotel-1.jpg" alt="photo of hotel 1" class="gallery__photo" />
+              <img
+                src="img/hotel-1.jpg"
+                alt="photo of hotel 1"
+                class="gallery__photo"
+              />
             </figure>
             <figure class="gallery__item">
-              <img src="img/hotel-2.jpg" alt="photo of hotel 2" class="gallery__photo" />
+              <img
+                src="img/hotel-2.jpg"
+                alt="photo of hotel 2"
+                class="gallery__photo"
+              />
             </figure>
             <figure class="gallery__item">
-              <img src="img/hotel-3.jpg" alt="photo of hotel 3" class="gallery__photo" />
+              <img
+                src="img/hotel-3.jpg"
+                alt="photo of hotel 3"
+                class="gallery__photo"
+              />
             </figure>
           </div>
 
           <div class="overview">
-            <h1 class="overview__heading">Hotel Las Palmas</h1>
+            <h1 class="overview__heading">호텔 라스 팔마스</h1>
             <div class="overview__stars">
               <svg class="overview__icon-star">
                 <use href="img/sprite.svg#star"></use>
@@ -117,56 +136,78 @@
               <svg class="overview__icon-location">
                 <use href="img/sprite.svg#location-pin"></use>
               </svg>
-              <button class="btn-inline">Albufeira, Portugal</button>
+              <button class="btn-inline">알부페이라, 포르투갈</button>
             </div>
 
             <div class="overview__rating">
               <div class="overview__rating-average">8.6</div>
-              <div class="overview__rating-count">429 votes</div>
+              <div class="overview__rating-count">429표</div>
             </div>
           </div>
 
           <div class="detail">
             <div class="description">
               <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione
-                sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+                라스 팔마스 호텔은 알부페이라의 중심에 위치하며, 아름다운 해변과
+                가까운 거리에 있습니다. 가족 단위 여행객에게 최적의 장소입니다.
               </p>
               <p class="paragraph">
-                Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore
-                iure aliquid aliquam.
+                모든 객실에서 무료 와이파이를 이용할 수 있으며, 공항 셔틀
+                서비스도 제공합니다.
               </p>
               <ul class="list">
-                <li class="list__item">Close to the beach</li>
-                <li class="list__item">Breakfast included</li>
-                <li class="list__item">Free airport shuttle</li>
-                <li class="list__item">Free wifi in all rooms</li>
-                <li class="list__item">Air conditioning and heating</li>
-                <li class="list__item">Pets allowed</li>
-                <li class="list__item">We speak all languages</li>
-                <li class="list__item">Perfect for families</li>
+                <li class="list__item">해변 인접</li>
+                <li class="list__item">조식 포함</li>
+                <li class="list__item">무료 공항 셔틀</li>
+                <li class="list__item">전 객실 무료 와이파이</li>
+                <li class="list__item">냉난방 완비</li>
+                <li class="list__item">반려동물 동반 가능</li>
+                <li class="list__item">다국어 구사 직원</li>
+                <li class="list__item">가족 단위 추천</li>
               </ul>
               <div class="recommend">
-                <p class="recommend__count">Lucy and 3 other friends recommend this hotel.</p>
+                <p class="recommend__count">
+                  Lucy님 외 친구 3명이 이 호텔을 추천합니다.
+                </p>
                 <div class="recommend__friends">
-                  <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo" />
-                  <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo" />
-                  <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo" />
-                  <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo" />
+                  <img
+                    src="img/user-3.jpg"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-4.jpg"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-5.jpg"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/user-6.jpg"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
                 </div>
               </div>
             </div>
             <div class="user-reviews">
               <figure class="review">
                 <blockquote class="review__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi,
-                  totam, itaque officia ex.
+                  정말 멋진 호텔이었습니다! 직원들도 친절하고 음식도 맛있었어요.
+                  다시 방문하고 싶습니다.
                 </blockquote>
                 <figcaption class="review__user">
-                  <img src="img/user-1.jpg" alt="User 1" class="review__photo" />
+                  <img
+                    src="img/user-1.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
                   <div class="review__user-box">
-                    <p class="review__user-name">Nick Smith</p>
-                    <p class="review__user-date">Feb 23rd, 2025</p>
+                    <p class="review__user-name">닉 스미스</p>
+                    <p class="review__user-date">2025년 2월 23일</p>
                   </div>
                   <div class="review__rating">7.8</div>
                 </figcaption>
@@ -174,30 +215,33 @@
 
               <figure class="review">
                 <blockquote class="review__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                  방이 깨끗하고 쾌적했습니다. 위치가 정말 좋아서 이동하기
+                  편리했어요.
                 </blockquote>
                 <figcaption class="review__user">
-                  <img src="img/user-2.jpg" alt="User 2" class="review__photo" />
+                  <img
+                    src="img/user-2.jpg"
+                    alt="User 2"
+                    class="review__photo"
+                  />
                   <div class="review__user-box">
-                    <p class="review__user-name">Mary Thompson</p>
-                    <p class="review__user-date">Sep 1st, 2024</p>
+                    <p class="review__user-name">메리 톰슨</p>
+                    <p class="review__user-date">2024년 9월 1일</p>
                   </div>
                   <div class="review__rating">8.5</div>
                 </figcaption>
               </figure>
-              <button class="btn-inline">Show all <span>&rarr;</span></button>
+              <button class="btn-inline">모두 보기 <span>&rarr;</span></button>
             </div>
           </div>
 
           <div class="cta">
             <h2 class="cta__book-now">
-              Good news! We have 4 free rooms for your selected dates!
+              좋은 소식입니다! 선택하신 날짜에 남은 방이 4개 있습니다!
             </h2>
             <button class="btn">
-              <span class="btn__visible">Book now</span>
-              <span class="btn__invisible">
-              Only 4 rooms left
-              </span> 
+              <span class="btn__visible">지금 예약하기</span>
+              <span class="btn__invisible"> 남은 방 4개 </span>
             </button>
           </div>
         </main>
