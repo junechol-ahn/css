@@ -35,7 +35,6 @@
 
     @media only screen and (max-width: base.$bp-tiny) {
       padding: 1.2rem 2rem;
-      
     }
 
     &:focus {
@@ -311,7 +310,7 @@
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -5px;
-    
+
     @media only screen and (max-width: base.$bp-small) {
       font-size: 1.8rem;
     }
@@ -581,5 +580,284 @@
   &:focus {
     outline: none;
     animation: pulsate 1s infinite;
+  }
+}
+
+//////////////////////////
+/// HOTEL CARD
+.hotel-card {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-light);
+  overflow: hidden;
+  border-radius: 3px;
+
+  @media only screen and (max-width: base.$bp-medium) {
+    flex-direction: column;
+  }
+
+  &__figure {
+    flex: 0 0 35%;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__details {
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__stars {
+    display: flex;
+  }
+
+  &__icon-star {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+    margin-right: 0.5rem;
+  }
+
+  &__rating {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  &__rating-average {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: var(--color-primary);
+    margin-right: 1rem;
+    line-height: 1;
+  }
+
+  &__rating-count {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+}
+
+//////////////////////////
+/// FLIGHT CARD
+.flight-card {
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: base.$bp-medium) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__airline {
+    display: flex;
+    align-items: center;
+    flex: 0 0 25%;
+
+    @media only screen and (max-width: base.$bp-medium) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-primary);
+    margin-right: 1.5rem;
+  }
+
+  &__airline-name {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-grey-dark-1);
+  }
+
+  &__route {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: base.$bp-medium) {
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+  }
+
+  &__route-details {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--color-grey-dark-2);
+    margin-bottom: 0.5rem;
+  }
+
+  &__city {
+    font-weight: 300;
+  }
+
+  &__arrow {
+    margin: 0 2rem;
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+  }
+
+  &__time {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__price {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @media only screen and (max-width: base.$bp-medium) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__price-value {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    font-weight: 300;
+
+    @media only screen and (max-width: base.$bp-medium) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//////////////////////////
+/// CAR CARD
+.car-card {
+  display: flex;
+  background-color: var(--color-grey-light-1);
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-light);
+  overflow: hidden;
+  border-radius: 3px;
+
+  @media only screen and (max-width: base.$bp-medium) {
+    flex-direction: column;
+  }
+
+  &__figure {
+    flex: 0 0 40%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__details {
+    padding: 2.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__name {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__specs {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: var(--color-grey-dark-2);
+    flex-wrap: wrap;
+  }
+
+  &__spec {
+    margin-right: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__price {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__price-value {
+    font-size: 2rem;
+    color: var(--color-primary);
+    font-weight: 400;
   }
 }
