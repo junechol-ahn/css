@@ -1,4 +1,51 @@
 .features {
-  background-color: $color-grey-light-2;
+  // background-color: $color-grey-light-2;
   grid-column: center-start / center-end;
+
+  margin: 15rem 0;
+
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+
+}
+
+.feature {
+  font-size: 1.6rem;
+
+  display: grid;
+  // grid-template-areas: 
+  //   "icon title"
+  //   ".    desc";
+  grid-template-columns: min-content 1fr;
+  grid-gap: 1rem 2rem;
+  
+  
+  &__icon {
+    // grid-area: icon;
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: $color-primary;
+
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    transform: translateY(-1rem);
+  }
+
+  &__title {
+    // grid-area: title;
+    font-weight: 700;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  &__desc {
+    // grid-area: desc;
+    font-weight: 500;
+    grid-row: 2;
+    grid-column: 2;
+  }
 }
